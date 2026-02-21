@@ -1,5 +1,5 @@
 
-# Customer Churn Prediction Analysis
+# Customer Churn Analysis
 
 **🚀 Quick Start**
 
