@@ -1,17 +1,16 @@
 
-**Customer Churn Prediction Analysis**
+# Customer Churn Prediction Analysis
 
 **🚀 Quick Start**
 
 **1 Install dependencies**
 pip install pandas matplotlib seaborn numpy
 
-# 2 Place telecom_customer_churn.csv in same folder
-# 3 Run (best in Jupyter/Colab)
+**2 Place telecom_customer_churn.csv in same folder**
+**3 Run (best in Jupyter/Colab)**
 python customer_churn_prediction.py
 
-
-**5 executive-ready charts generated automatically!**
+**executive-ready charts generated automatically!**
 
 ## 📋 Overview
 Comprehensive telecom customer churn analysis that reveals:
