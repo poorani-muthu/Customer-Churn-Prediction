@@ -10,11 +10,11 @@ Missing values in service columns (like 'Offer', 'Internet Type') get filled wit
 <br>
 A function `map_churn_category` groups churn reasons into buckets: Competitors, Customer Support, Pricing, Product, Network, or Other. <br>It applies this to create a new 'Churn_Category' column.
 <br>
-## Core Analysis Preparation<br>
-- Filters data to `analysis_df` (only Stayed/Churned customers, excluding new "Joined").<br>
-- Creates `norm_df` for Normalized Value Factor (NVF): Scales 'Monthly Charge', 'Tenure in Months', and 'Number of Referrals' to 0-1 range using `min_max_scale`. <br>Averages them for NVF (Y-axis: higher = more valuable customer). 
+## Core Analysis Preparation
+<br>- Filters data to `analysis_df` (only Stayed/Churned customers, excluding new "Joined").
+<br>- Creates `norm_df` for Normalized Value Factor (NVF): Scales 'Monthly Charge', 'Tenure in Months', and 'Number of Referrals' to 0-1 range using `min_max_scale`. <br>Averages them for NVF (Y-axis: higher = more valuable customer). 
 <br>- Computes Normalized Churn Risk Factor (NCRF): For risk features (Contract, Online Security, etc.), calculates how much each option increases churn vs. average. <br>Sums raw scores, normalizes to 0-1 (higher NCRF = lower risk, X-axis). 
-Merges into `master_df` with segments: Value_Tier (High/Low based on NVF >=0.6), Strategic_Segment (Stayed @ Risk, Stayed Safe, Churned based on NCRF).<br>
+<br>-Merges into `master_df` with segments: Value_Tier (High/Low based on NVF >=0.6), Strategic_Segment (Stayed @ Risk, Stayed Safe, Churned based on NCRF).<br>
 ## Threshold Simulation<br>
 `simulate_thresholds(v_threshold, r_threshold)` tests different cutoffs. It copies data, reclassifies tiers, merges charges, and groups to show accounts, average charge, total value, and % within tiers. <br>Example calls test thresholds like 0.5 or 0.6.<br>
 ## Churn Reason Visuals <br>
