@@ -21,8 +21,8 @@ Merges into `master_df` with segments: Value_Tier (High/Low based on NVF >=0.6),
 Defines colors (e.g., `churn="#f7f4d5"`) and `churn_subcategory_distribution` for % breakdowns. `plot_churn_subcategory` makes horizontal bar charts. A complex figure (3x4 grid) shows a pie chart of categories <br>(Competitors biggest at ~12%) with arrows to subcategory bars, titled "Churn Is Not Evenly Distributed".<br>
 ## Additional Features and Prep <br>
 Merges scores back to full `prepared` DataFrame, fills new customers as 'Joined'/'Acquisition Tier'. Adds Age_Group (Gen Z to Senior) and Revenue_Tier (Entry to VIP based on Total Revenue). <br>
-## Revenue Impact Charts <br>
-- "Churn Hotspots" bar chart: Top traits in churned customers by count and cumulative revenue loss (e.g., Month-to-Month contract highest exposure). 
+## Revenue Impact Charts 
+<br>-"Churn Hotspots" bar chart: Top traits in churned customers by count and cumulative revenue loss (e.g., Month-to-Month contract highest exposure). 
 <br>- "Feature-Level Churn Intelligence": Three-panel plot with Lift % (relative churn risk vs. average), feature names, and churn probability bars. 
 <br>- 4x4 grid dashboard: Boxes show revenue/accounts per segment (e.g., High Value Churned: $320k), plus scatter plot of NVF vs. NCRF colored by segment, emphasizing volume over elite retention.<br>
 ## Purpose <br>
